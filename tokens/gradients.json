@@ -1,0 +1,58 @@
+{
+  "gradient": {
+    "primary": {
+      "yellow-orange-soft": {
+        "type": "linear",
+        "angle": 135,
+        "stops": [
+          { "color": "#FFE34D", "position": 0 },
+          { "color": "#FF8A3D", "position": 1 }
+        ]
+      },
+      "pink-purple-normal": {
+        "type": "linear",
+        "angle": 135,
+        "stops": [
+          { "color": "#FF4FA3", "position": 0 },
+          { "color": "#7B5CFF", "position": 1 }
+        ]
+      }
+    },
+    "secondary": {
+      "blue-purple-soft": {
+        "type": "linear",
+        "angle": 145,
+        "stops": [
+          { "color": "#3DA9FF", "position": 0 },
+          { "color": "#7B5CFF", "position": 1 }
+        ]
+      },
+      "cyan-blue-normal": {
+        "type": "linear",
+        "angle": 120,
+        "stops": [
+          { "color": "#3DFFD9", "position": 0 },
+          { "color": "#3DA9FF", "position": 1 }
+        ]
+      }
+    },
+    "accent": {
+      "lime-cyan-punch": {
+        "type": "linear",
+        "angle": 110,
+        "stops": [
+          { "color": "#A8FF3D", "position": 0 },
+          { "color": "#3DFFD9", "position": 1 }
+        ]
+      },
+      "orange-pink-punch": {
+        "type": "linear",
+        "angle": 100,
+        "stops": [
+          { "color": "#FF8A3D", "position": 0 },
+          { "color": "#FF4FA3", "position": 1 }
+        ]
+      }
+    }
+  }
+}
