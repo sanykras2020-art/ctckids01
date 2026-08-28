@@ -1,1 +1,102 @@
-<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Игорь Компаниец</title><style>html,body{margin:0;background:#f7f6f2;font-family:Arial,sans-serif}#s{padding:24px;font-size:16px}</style></head><body><div id="s">Загрузка сайта…</div><script>(async()=>{try{const u='https://raw.githubusercontent.com/sanykras2020-art/ctckids01/main/igor-site-v2/site.html?v=13';const r=await fetch(u,{cache:'no-store'});if(!r.ok)throw new Error('HTTP '+r.status);const h=await r.text();document.open();document.write(h);document.close()}catch(e){document.getElementById('s').textContent='Не удалось загрузить сайт. Обновите страницу.';console.error(e)}})();</script></body></html>
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Игорь Компаниец — v2</title>
+<style>
+:root{--ink:#111;--paper:#f7f6f2;--pink:#f3d6ec;--green:#d9f0d9;--blue:#dde8f2;--yellow:#f3efbc;--beige:#efe8dd;--grey:#b8b8b8;--pad:18px;--r:24px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;background:var(--paper)}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit}
+h1,h2,h3,p,strong,.proof-lines div,.card,.tone{hyphens:none;-webkit-hyphens:none;word-break:normal;overflow-wrap:normal}
+h1,h2,h3,.lead,.current-head h3,.proj-head h3,.contact h2{ text-wrap:balance }
+p,.body,.current-copy,.desc,.pc p{ text-wrap:pretty }
+.site{max-width:920px;margin:auto;padding:0 var(--pad) 70px}
+.top{position:sticky;top:0;z-index:30;display:flex;justify-content:space-between;align-items:center;padding:14px 0 12px;background:rgba(247,246,242,.96)}
+.tools{display:flex;gap:8px}
+.round{width:54px;height:54px;border:0;border-radius:50%;background:#111;color:#fff;display:grid;place-items:center;cursor:pointer}
+.hamb{width:23px;height:15px;display:flex;flex-direction:column;justify-content:space-between}.hamb i{height:2px;background:#fff}
+.search{width:22px;height:22px;border:2px solid #fff;border-radius:50%;position:relative}.search:after{content:"";position:absolute;width:9px;height:2px;background:#fff;right:-7px;bottom:-3px;transform:rotate(45deg)}
+.brand{font-size:14px;letter-spacing:.04em}
+.hero{padding:8px 0 34px}.k{font-size:12px;letter-spacing:.08em;text-transform:uppercase;margin:0 0 15px}
+h1{font-size:clamp(50px,14vw,88px);line-height:.88;letter-spacing:-.055em;text-transform:uppercase;margin:0 0 24px}
+h2{font-size:clamp(42px,12vw,72px);line-height:.92;letter-spacing:-.05em;text-transform:uppercase;margin:0 0 22px}
+h3{font-size:30px;line-height:.98;letter-spacing:-.04em;margin:0}
+.lead{font-size:28px;line-height:1.07;letter-spacing:-.03em;margin:0 0 18px}
+.body{font-size:20px;line-height:1.22}.bold{font-weight:700}
+.ctas{display:flex;gap:10px;flex-wrap:wrap;margin:22px 0 30px}.pill{border:1.5px solid #111;border-radius:999px;padding:11px 15px;font-size:16px}.pill.black{background:#111;color:#fff}
+.hero-grid{display:grid;grid-template-columns:1.35fr 1fr 1fr;gap:8px}.sq{aspect-ratio:1;border-radius:22px;overflow:hidden;min-width:0}.sq.big{grid-row:span 2}.sq img{width:100%;height:100%;object-fit:cover;display:block}.tone{display:flex;align-items:flex-end;padding:10px;font-weight:700;font-size:12px;line-height:1.04}
+.pink{background:var(--pink)}.green{background:var(--green)}.blue{background:var(--blue)}.yellow{background:var(--yellow)}.beige{background:var(--beige)}
+section.block{padding:30px 0 36px;border-top:1.5px solid #111}
+.current-intro{max-width:760px;margin-bottom:28px}.current-project{padding:0 0 30px;margin-bottom:28px;border-bottom:1px solid #111}
+.current-head,.proj-head{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:14px;align-items:start;margin-bottom:9px}.current-head h3{font-size:clamp(30px,8vw,48px);min-width:0}.year{font-size:13px;white-space:nowrap;padding-top:3px}
+.meta{font-size:12px;text-transform:uppercase;letter-spacing:.04em}.current-copy,.desc{font-size:18px;line-height:1.24;margin:10px 0 16px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.grid.three{grid-template-columns:repeat(3,minmax(0,1fr))}
+.card{aspect-ratio:1;border-radius:20px;overflow:hidden;display:flex;align-items:flex-end;padding:10px;font-weight:700;font-size:14px;line-height:1.05;min-width:0;text-wrap:balance}.card img{width:100%;height:100%;object-fit:cover}.current-project .card{font-size:clamp(11px,3.3vw,15px)}
+.list{border-top:1px solid #111}.row{display:grid;grid-template-columns:64px minmax(0,1fr) 22px;gap:10px;align-items:center;padding:15px 0;border-bottom:1px solid #111}.row strong{font-size:21px;line-height:1.06;min-width:0}
+.arrow{position:relative;display:block;width:18px;height:18px;justify-self:end}.arrow:before{content:"";position:absolute;top:2px;right:2px;width:8px;height:8px;border-top:1.6px solid currentColor;border-right:1.6px solid currentColor}.arrow:after{content:"";position:absolute;left:3px;bottom:3px;width:11px;height:1.6px;background:currentColor;transform:rotate(-45deg);transform-origin:right center}
+.proof{padding-top:36px!important;padding-bottom:42px!important}.proof-lines{color:var(--grey);font-size:clamp(30px,7.8vw,48px);line-height:1.09;letter-spacing:-.035em}.proof-lines div{margin-bottom:5px;text-wrap:balance}
+.proj{padding:12px 0 30px}.practice{display:grid;gap:10px}.pc{border-radius:22px;padding:20px;min-height:170px}.pc h3{font-size:27px;margin:5px 0 18px}.pc p{font-size:17px;line-height:1.2}
+.chain{font-size:clamp(34px,10vw,56px);line-height:.95;text-transform:uppercase;letter-spacing:-.04em;margin:28px 0}.chain div:nth-child(even){padding-left:12%}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}.chip{border:1px solid #111;border-radius:999px;padding:8px 11px;font-size:14px}
+.contact{background:var(--pink);border-radius:24px;padding:24px}.contact h2{text-transform:none;font-size:clamp(38px,11vw,62px)}
+.footer{font-size:12px;text-transform:uppercase;display:flex;justify-content:space-between;padding-top:20px}
+.overlay{position:fixed;inset:0;z-index:50;background:var(--paper);display:none;padding:22px;overflow:auto}.overlay.open{display:block}.close{float:right;width:48px;height:48px;border:0;border-radius:50%;background:#111;color:#fff;font-size:28px}.overlay nav{clear:both;padding-top:25px}.overlay nav a{display:flex;justify-content:space-between;font-size:clamp(40px,12vw,72px);line-height:.95;text-transform:uppercase;letter-spacing:-.04em;padding:12px 0;border-bottom:1px solid #111}
+.searchbox{clear:both;padding-top:30px}.searchbox input{width:100%;border:0;border-bottom:2px solid #111;background:transparent;font-size:36px;padding:10px 0;outline:0}.search-results a{display:block;font-size:24px;padding:14px 0;border-bottom:1px solid #111}
+@media(min-width:700px){:root{--pad:28px}.practice{grid-template-columns:repeat(3,1fr)}.grid{grid-template-columns:repeat(4,1fr)}.hero-grid{grid-template-columns:2fr 1fr 1fr}.tone{font-size:16px}}
+@media(max-width:430px){
+  :root{--pad:18px}
+  h1{font-size:clamp(45px,12vw,58px);line-height:.9}
+  h2{font-size:clamp(39px,10.8vw,46px);line-height:.94;max-width:100%}
+  .lead{font-size:22px;line-height:1.08}
+  .body{font-size:17px;line-height:1.24}
+  .tone{font-size:10px}
+  .current-head,.proj-head{grid-template-columns:1fr;gap:5px}
+  .current-head h3,.proj-head h3{font-size:28px;line-height:1.02;max-width:100%}
+  .year{grid-row:1;font-size:11px;padding:0;opacity:.7}
+  .current-head h3,.proj-head h3{grid-row:2}
+  .current-copy,.desc{font-size:17px;line-height:1.28}
+  .row{grid-template-columns:minmax(0,1fr) 20px;gap:3px 10px;align-items:center}
+  .row .meta{grid-column:1;grid-row:1;font-size:10px;margin:0}
+  .row strong{grid-column:1;grid-row:2;font-size:19px;line-height:1.08;text-wrap:pretty}
+  .row .arrow{grid-column:2;grid-row:1/3;align-self:center}
+  .grid.three{gap:8px}
+  .grid.three .card{font-size:clamp(9px,2.6vw,11px);line-height:1.04;padding:8px}
+  .proof-lines{font-size:27px;line-height:1.13}
+  .pc h3{font-size:25px;line-height:1.02}
+  .contact h2{font-size:36px;line-height:1.02}
+}
+</style>
+</head>
+<body>
+<div class="site">
+<header class="top"><div class="tools"><button class="round" id="menuBtn" aria-label="Меню"><span class="hamb"><i></i><i></i><i></i></span></button><button class="round" id="searchBtn" aria-label="Поиск"><span class="search"></span></button></div><div class="brand">IGOR / 20+ ЛЕТ</div></header>
+<main>
+<section class="hero" id="top"><p class="k">Creative / Editorial / Culture / Product</p><h1>Игорь<br>Компаниец</h1><p class="lead">Придумываю, собираю и запускаю проекты.</p><p class="body">Медиа, культурные проекты, бренды и продукты — от первой неясной мысли до формата, команды и запуска.</p><p class="body bold">Стратегия, креатив и работа руками.</p><div class="ctas"><a class="pill black" href="#current">Смотреть проекты</a><a class="pill" href="#contact">Обсудить проект</a></div><div class="hero-grid"><div class="sq big"><img src="https://raw.githubusercontent.com/sanykras2020-art/ctckids01/main/igor-site-v2/igor.webp?v=13" onerror="this.onerror=null;this.src='https://igor-kompaniets-assets.vercel.app/portrait.jpg'" alt="Игорь Компаниец"></div><div class="sq tone pink">Редактура<br>и медиа</div><div class="sq tone yellow">Культура<br>и люди</div><div class="sq tone blue">Research<br>и продукт</div><div class="sq tone green">20+<br>лет</div></div></section>
+<section class="block" id="current"><p class="k">CURRENT / 2024—2026</p><h2>Актуальные проекты</h2><p class="body current-intro">То, над чем работаю сейчас и в последние два года. Часть проектов ещё не закончена — поэтому пока коротко.</p>
+<div class="current-project"><div class="current-head"><h3>Создание книги</h3><span class="year">2026</span></div><p class="meta">CREATIVE PROJECT / IN PROGRESS</p><p class="current-copy">Разработка креативного проекта.</p><div class="grid three"><div class="card pink">КНИГА</div><div class="card beige">КОНЦЕПТ</div><div class="card blue">В РАБОТЕ</div></div></div>
+<div class="current-project"><div class="current-head"><h3>Яндекс Плюс / ЖК «Чкаловский»</h3><span class="year">2024—25</span></div><p class="meta">RETAIL / CONCEPT / CREATIVE</p><p class="current-copy">Разработка крупномасштабного ритейл-проекта для ЖК «Чкаловский».</p><div class="grid three"><div class="card blue">ЯНДЕКС<br>ПЛЮС</div><div class="card yellow">РИТЕЙЛ</div><div class="card green">ЖК<br>ЧКАЛОВСКИЙ</div></div></div>
+<div class="current-project"><div class="current-head"><h3>Яндекс Плюс / Дача / research</h3><span class="year">2024—25</span></div><p class="meta">RESEARCH / STRATEGY / CONCEPT</p><p class="current-copy">Исследование рынка загородных резиденций крупнейших IT-компаний и формирование концепта Яндекс.</p><div class="grid three"><div class="card green">RESEARCH</div><div class="card beige">РЕЗИДЕНЦИИ<br>IT-КОМПАНИЙ</div><div class="card pink">КОНЦЕПТ</div></div></div>
+<div class="current-project"><div class="current-head"><h3>Collab Lab</h3><span class="year">2024</span></div><p class="meta">OWN PROJECT / COMMUNITY / PRODUCT</p><p class="current-copy">Собственный волонтерский проект: онлайн-аппликейшн + офлайн-проект.</p><div class="grid three"><div class="card yellow">COLLAB<br>LAB</div><div class="card blue">ONLINE</div><div class="card green">OFFLINE</div></div></div>
+<p class="k" style="margin-top:28px">СЕЙЧАС ЕЩЁ</p><div class="list"><a class="row" href="https://theblueprint.ru/career/34879" target="_blank"><span class="meta">2025</span><strong>Cruise II by Kuznyahouse — редактор</strong><span class="arrow"></span></a><a class="row" href="https://moskvichka.ru/article/places/vyhodnye-dannye-estetskij-gid-po-nizhnemu-novgorodu" target="_blank"><span class="meta">2025</span><strong>«Москвичка» — Нижний Новгород</strong><span class="arrow"></span></a><a class="row" href="https://www.kinopoisk.ru/media/article/4012811/" target="_blank"><span class="meta">2026</span><strong>Кинопоиск / Playlist</strong><span class="arrow"></span></a><a class="row" href="https://style.rbc.ru/soul/69ca51cb9a7947416009a222" target="_blank"><span class="meta">2026</span><strong>РБК Стиль — личный опыт</strong><span class="arrow"></span></a></div></section>
+<section class="block proof" id="proof"><p class="k">ОПЫТ / МАСШТАБ</p><div class="proof-lines"><div>Руководил компаниями 5-25 человек</div><div>Запустил 10+ продуктов</div><div>Более 15 реализованных аутсорс-кейсов</div><div>Организовал 20+ спецпроектов</div><div>Более 20 лет на рынке</div></div></section>
+<section class="block" id="work"><p class="k">SELECTED WORK</p><h2>Проекты</h2><p class="lead">Здесь не всё подряд, а проекты, в которых хорошо видно, как я работаю: нахожу идею, собираю вокруг неё язык и людей и проверяю, может ли она жить после презентации.</p>
+<div class="proj"><div class="proj-head"><h3>«Солянка»</h3><span class="year">2007—12</span></div><p class="meta">Culture / Programming / Community</p><p class="desc">Не просто клуб: место, которое ежедневно производило собственную культурную повестку.</p><div class="grid three"><div class="card beige">СОЛЯНКА</div><div class="card pink">КЛУБ КАК МЕДИА</div><div class="card blue">ПРОГРАММА / ЛЮДИ / СОБЫТИЯ</div></div></div>
+<div class="proj"><div class="proj-head"><h3>Burger</h3><span class="year">2009—12</span></div><p class="meta">Media / Publishing / Editorial</p><p class="desc">Газета, которая выросла внутри клуба и стала отдельным редакционным продуктом.</p></div>
+<div class="proj"><div class="proj-head"><h3>SNC</h3><span class="year">2015—18</span></div><p class="meta">Chief Editor / Special Projects</p><p class="desc">Глянец, который можно было немного расшатать изнутри.</p></div>
+<div class="proj"><div class="proj-head"><h3>Dazed & Confused</h3><span class="year">2008</span></div><p class="meta">Russian Pilot / Media Development</p><p class="desc">Работа над запуском русской версии и пилотным номером.</p></div>
+<div class="proj"><div class="proj-head"><h3>Glamour Russia</h3><span class="year">2004—07</span></div><p class="meta">Culture Editorial / Launch-era Team</p><p class="desc">Большая редакционная машина и первый опыт внутри международного издательского бренда такого масштаба.</p></div></section>
+<section class="block" id="practice"><p class="k">PRACTICE</p><h2>Что я делаю</h2><div class="practice"><div class="pc pink"><p class="meta">01</p><h3>Media & Editorial</h3><p>Редакционная идея, язык, авторы, форматы, запуск и перезапуск медиа.</p></div><div class="pc green"><p class="meta">02</p><h3>Culture & Community</h3><p>Придумывать не только событие, но и причину возвращаться.</p></div><div class="pc blue"><p class="meta">03</p><h3>Strategy, Research & Product</h3><p>Разобраться в среде, когда готового ответа нет, и превратить вывод в формат.</p></div></div></section>
+<section class="block" id="method"><p class="k">METHOD</p><h2>Как работаю</h2><p class="lead">Сначала понять, потом придумать. Потом всё равно придётся делать руками.</p><div class="chain"><div>контекст</div><div>идея</div><div>форма</div><div>люди</div><div>запуск</div><div>аудитория</div><div>развитие</div></div></section>
+<section class="block" id="writing"><p class="k">WRITING / TALKS</p><h2>Пишу</h2><p class="lead">Пишу, потому что это всё ещё самый быстрый способ понять, что я думаю.</p></section>
+<section class="block" id="archive"><h2>Архив</h2><p class="lead">Архив, а не карьерная лестница.</p><div class="chips"><span class="chip">ОМ / FHM</span><span class="chip">Glamour</span><span class="chip">Dazed pilot</span><span class="chip">Солянка</span><span class="chip">Burger</span><span class="chip">Port</span><span class="chip">SNC</span><span class="chip">Sputnik Style</span><span class="chip">Love Boat</span><span class="chip">No</span><span class="chip">S-11</span></div></section>
+<section class="block" id="contact"><div class="contact"><p class="k">CONTACT</p><h2>Есть проект, который пока сложно нормально сформулировать? Можно начать с разговора.</h2><div class="ctas"><a class="pill black" href="https://t.me/vse_kompaniets" target="_blank">Telegram</a></div></div></section>
+</main><footer class="footer"><span>Игорь Компаниец / v2</span><a href="#top">Наверх ↑</a></footer></div>
+<div class="overlay" id="menu"><button class="close" data-close="menu">×</button><nav><a href="#current">Current <span>↘</span></a><a href="#work">Work <span>↘</span></a><a href="#practice">Practice <span>↘</span></a><a href="#writing">Writing <span>↘</span></a><a href="#archive">Archive <span>↘</span></a><a href="#contact">Contact <span>↘</span></a></nav></div>
+<div class="overlay" id="searchPanel"><button class="close" data-close="searchPanel">×</button><div class="searchbox"><p class="k">SEARCH</p><input id="q" placeholder="Что ищем?"><div class="search-results" id="results"></div></div></div>
+<script>const menu=document.getElementById('menu'),sp=document.getElementById('searchPanel');document.getElementById('menuBtn').onclick=()=>menu.classList.add('open');document.getElementById('searchBtn').onclick=()=>{sp.classList.add('open');setTimeout(()=>document.getElementById('q').focus(),50)};document.querySelectorAll('[data-close]').forEach(b=>b.onclick=()=>document.getElementById(b.dataset.close).classList.remove('open'));menu.querySelectorAll('a').forEach(a=>a.onclick=()=>menu.classList.remove('open'));const items=[['Актуальные проекты','#current'],['Проекты','#work'],['Что я делаю','#practice'],['Как работаю','#method'],['Тексты','#writing'],['Архив','#archive'],['Контакт','#contact']];const q=document.getElementById('q'),r=document.getElementById('results');function render(){const v=q.value.toLowerCase();r.innerHTML=items.filter(x=>!v||x[0].toLowerCase().includes(v)).map(x=>`<a href="${x[1]}">${x[0]}</a>`).join('');r.querySelectorAll('a').forEach(a=>a.onclick=()=>sp.classList.remove('open'))}q.oninput=render;render();</script>
+</body>
+</html>
