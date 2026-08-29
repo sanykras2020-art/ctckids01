@@ -1,0 +1,349 @@
+{
+  "generated_at_utc": "2026-08-29T11:12:24Z",
+  "portrait": "assets/igor.webp",
+  "old_site_url": "https://igorkompaniets.tilda.ws/",
+  "assets": [
+    {
+      "file": "assets/old/001_IK.svg",
+      "source_url": "https://static.tildacdn.com/tild3131-3130-4264-b065-646233646239/IK.svg",
+      "bytes": 411,
+      "sha256": "9848ccc1b859ba37a59af60b9736e7434201da5ab9fda20e42ba56ca0d01ec80",
+      "content_type": "image/svg+xml",
+      "source": "existing Igor Tilda site",
+      "public_use": "reused from previous public site; final rights responsibility remains with site owner"
+    },
+    {
+      "file": "assets/old/002_IK.png",
+      "source_url": "https://static.tildacdn.com/tild3462-3065-4632-a331-393132343762/IK.png",
+      "bytes": 669,
+      "sha256": "6037201d199560a9fbcce6f481fc9b2dc47e9e0887c2034264bf40f85010f333",
+      "content_type": "image/png",
+      "source": "existing Igor Tilda site",
+      "public_use": "reused from previous public site; final rights responsibility remains with site owner"
+    },
+    {
+      "file": "assets/old/003_Frame.png",
+      "source_url": "https://static.tildacdn.com/tild3033-3536-4461-b938-343137393962/Frame.png",
+      "bytes": 766,
+      "sha256": "6144f5e3cef7bd1e00b02693aed4466485e8da4e7c8789e4d9e413e0a7df3012",
+      "content_type": "image/png",
+      "source": "existing Igor Tilda site",
+      "public_use": "reused from previous public site; final rights responsibility remains with site owner"
+    },
+    {
+      "file": "assets/old/004_photo_2024-09-26_11-.jpg",
+      "source_url": "https://static.tildacdn.com/tild6266-3433-4663-a539-653134643230/photo_2024-09-26_11-.jpg",
+      "bytes": 116588,
+      "sha256": "c6910f894a397b26ad2e97f39a4f8f60f851d168224ead0e4158013699c7c3ec",
+      "content_type": "image/jpeg",
+      "source": "existing Igor Tilda site",
+      "public_use": "reused from previous public site; final rights responsibility remains with site owner"
+    },
+    {
+      "file": "assets/old/005_Rectangle_314.jpg",
+      "source_url": "https://static.tildacdn.com/tild3733-6534-4430-a635-396435353335/Rectangle_314.jpg",
+      "bytes": 435984,
+      "sha256": "7da23f048080f05b99b0781745299a0eb0d3a72b7b2ed7f0e0e384b2566e6428",
+      "content_type": "image/jpeg",
+      "source": "existing Igor Tilda site",
+      "public_use": "reused from previous public site; final rights responsibility remains with site owner"
+    },
+    {
+      "file": "assets/old/006_Frame.svg",
+      "source_url": "https://static.tildacdn.com/tild6165-3032-4230-a330-633332623634/Frame.svg",
+      "bytes": 1043,
+      "sha256": "ddc5c951eb9cd31d51684989a5ab65cdb8e130f0525fdfafd8a5594688c0d7a2",
+      "content_type": "image/svg+xml",
+      "source": "existing Igor Tilda site",
+      "public_use": "reused from previous public site; final rights responsibility remains with site owner"
+    },
+    {
+      "file": "assets/old/007_photo_2024-09-26_12-.jpg",
+      "source_url": "https://static.tildacdn.com/tild6364-3361-4530-a533-616231386465/photo_2024-09-26_12-.jpg",
+      "bytes": 76958,
+      "sha256": "36419833ba23b03f939866bd312ca1e627c413f43767a084406a9fe16a5911d7",
+      "content_type": "image/jpeg",
+      "source": "existing Igor Tilda site",
+      "public_use": "reused from previous public site; final rights responsibility remains with site owner"
+    },
+    {
+      "file": "assets/old/008_photo_2024-09-26_12-.jpg",
+      "source_url": "https://static.tildacdn.com/tild6537-6464-4530-b934-396366343234/photo_2024-09-26_12-.jpg",
+      "bytes": 44635,
+      "sha256": "4498047600c5c42eb57e425ccd49667e40268e721ffbbb520ea81129fc734e95",
+      "content_type": "image/jpeg",
+      "source": "existing Igor Tilda site",
+      "public_use": "reused from previous public site; final rights responsibility remains with site owner"
+    },
+    {
+      "file": "assets/old/009_photo_2024-09-26_11-.jpg",
+      "source_url": "https://static.tildacdn.com/tild6161-3266-4936-a364-636663316466/photo_2024-09-26_11-.jpg",
+      "bytes": 116588,
+      "sha256": "c6910f894a397b26ad2e97f39a4f8f60f851d168224ead0e4158013699c7c3ec",
+      "content_type": "image/jpeg",
+      "source": "existing Igor Tilda site",
+      "public_use": "reused from previous public site; final rights responsibility remains with site owner"
+    },
+    {
+      "file": "assets/old/010_image.png",
+      "source_url": "https://static.tildacdn.com/tild3836-3530-4066-a137-616265613633/image.png",
+      "bytes": 28792,
+      "sha256": "88b5f2c4d25ae866bc770f40515a65f1fd8a1e302e3620dce0252768af23407f",
+      "content_type": "image/png",
+      "source": "existing Igor Tilda site",
+      "public_use": "reused from previous public site; final rights responsibility remains with site owner"
+    },
+    {
+      "file": "assets/old/011_photo_2024-09-26_12-.jpg",
+      "source_url": "https://static.tildacdn.com/tild3035-3032-4663-a535-386266626563/photo_2024-09-26_12-.jpg",
+      "bytes": 76958,
+      "sha256": "36419833ba23b03f939866bd312ca1e627c413f43767a084406a9fe16a5911d7",
+      "content_type": "image/jpeg",
+      "source": "existing Igor Tilda site",
+      "public_use": "reused from previous public site; final rights responsibility remains with site owner"
+    },
+    {
+      "file": "assets/old/012_image.png",
+      "source_url": "https://static.tildacdn.com/tild3336-3730-4663-a562-643464363663/image.png",
+      "bytes": 168326,
+      "sha256": "331eaa50677d1ce859dabee639176c14dae74ec62084cc0f22e1f94d44c1dba3",
+      "content_type": "image/png",
+      "source": "existing Igor Tilda site",
+      "public_use": "reused from previous public site; final rights responsibility remains with site owner"
+    },
+    {
+      "file": "assets/old/013_Rectangle_321.jpg",
+      "source_url": "https://static.tildacdn.com/tild3033-6230-4139-b934-613137303936/Rectangle_321.jpg",
+      "bytes": 219626,
+      "sha256": "7bfb45a91fa9a24cd4f8f29135ad968b7d26084e278c28c2128c237b6e78cd7f",
+      "content_type": "image/jpeg",
+      "source": "existing Igor Tilda site",
+      "public_use": "reused from previous public site; final rights responsibility remains with site owner"
+    },
+    {
+      "file": "assets/old/014_photo_2024-09-26_11-.jpg",
+      "source_url": "https://static.tildacdn.com/tild3231-3630-4636-b839-313533613734/photo_2024-09-26_11-.jpg",
+      "bytes": 194842,
+      "sha256": "b5568e27f19925bede477de80e1d4510f5aa2a1caac42aa82d953c2cc4d32234",
+      "content_type": "image/jpeg",
+      "source": "existing Igor Tilda site",
+      "public_use": "reused from previous public site; final rights responsibility remains with site owner"
+    },
+    {
+      "file": "assets/old/015_photo_2024-09-26_11-.jpg",
+      "source_url": "https://static.tildacdn.com/tild6335-3632-4132-a564-643430303361/photo_2024-09-26_11-.jpg",
+      "bytes": 197979,
+      "sha256": "a35d62609dff37d73461ee1affba01d7822f91f295d430dc2179300e00f69bf3",
+      "content_type": "image/jpeg",
+      "source": "existing Igor Tilda site",
+      "public_use": "reused from previous public site; final rights responsibility remains with site owner"
+    },
+    {
+      "file": "assets/old/016_Rectangle_321.jpg",
+      "source_url": "https://static.tildacdn.com/tild3937-6436-4532-b536-326665333832/Rectangle_321.jpg",
+      "bytes": 219626,
+      "sha256": "7bfb45a91fa9a24cd4f8f29135ad968b7d26084e278c28c2128c237b6e78cd7f",
+      "content_type": "image/jpeg",
+      "source": "existing Igor Tilda site",
+      "public_use": "reused from previous public site; final rights responsibility remains with site owner"
+    },
+    {
+      "file": "assets/old/017_image.png",
+      "source_url": "https://static.tildacdn.com/tild6539-6561-4862-b431-396464616131/image.png",
+      "bytes": 93335,
+      "sha256": "291568e513dd433a1efc8c428ee2e994e12f7a36f957fa27924531859bdd6211",
+      "content_type": "image/png",
+      "source": "existing Igor Tilda site",
+      "public_use": "reused from previous public site; final rights responsibility remains with site owner"
+    },
+    {
+      "file": "assets/old/018_photo_2024-09-26_11-.jpg",
+      "source_url": "https://static.tildacdn.com/tild6561-3664-4834-b932-393633316235/photo_2024-09-26_11-.jpg",
+      "bytes": 194842,
+      "sha256": "b5568e27f19925bede477de80e1d4510f5aa2a1caac42aa82d953c2cc4d32234",
+      "content_type": "image/jpeg",
+      "source": "existing Igor Tilda site",
+      "public_use": "reused from previous public site; final rights responsibility remains with site owner"
+    },
+    {
+      "file": "assets/old/019_image.png",
+      "source_url": "https://static.tildacdn.com/tild3866-3763-4432-b936-326635356634/image.png",
+      "bytes": 155876,
+      "sha256": "a5b877a944b94b64a261dc4fadab2f2ca531d56a1f42e86fd835d479f4db51ce",
+      "content_type": "image/png",
+      "source": "existing Igor Tilda site",
+      "public_use": "reused from previous public site; final rights responsibility remains with site owner"
+    },
+    {
+      "file": "assets/old/020_photo_2024-09-26_11-.jpg",
+      "source_url": "https://static.tildacdn.com/tild6435-3830-4364-b762-633538313133/photo_2024-09-26_11-.jpg",
+      "bytes": 197979,
+      "sha256": "a35d62609dff37d73461ee1affba01d7822f91f295d430dc2179300e00f69bf3",
+      "content_type": "image/jpeg",
+      "source": "existing Igor Tilda site",
+      "public_use": "reused from previous public site; final rights responsibility remains with site owner"
+    },
+    {
+      "file": "assets/old/021_C65A7C47-88DE-4381-9.jpg",
+      "source_url": "https://static.tildacdn.com/tild3135-3738-4437-b062-333537383630/C65A7C47-88DE-4381-9.jpg",
+      "bytes": 629510,
+      "sha256": "e40cbe164ab405e3ea724463d148052ab213fd7b4691bab27bf5794df66d35ea",
+      "content_type": "image/jpeg",
+      "source": "existing Igor Tilda site",
+      "public_use": "reused from previous public site; final rights responsibility remains with site owner"
+    },
+    {
+      "file": "assets/old/022_download_1.jpg",
+      "source_url": "https://static.tildacdn.com/tild6333-3938-4164-b735-346337316334/download_1.jpg",
+      "bytes": 602885,
+      "sha256": "dc88f6bd9d19e63ab787028ee781d51443aa9138a681eea7f23da5945e6c8bf5",
+      "content_type": "image/jpeg",
+      "source": "existing Igor Tilda site",
+      "public_use": "reused from previous public site; final rights responsibility remains with site owner"
+    },
+    {
+      "file": "assets/old/023_C65A7C47-88DE-4381-9.jpg",
+      "source_url": "https://static.tildacdn.com/tild6239-3737-4533-a362-326463383536/C65A7C47-88DE-4381-9.jpg",
+      "bytes": 523062,
+      "sha256": "c5d5ea4c8ba79c7d60c5ff7ba09c801a52198418ccd0e22403f2f5ff568732e9",
+      "content_type": "image/jpeg",
+      "source": "existing Igor Tilda site",
+      "public_use": "reused from previous public site; final rights responsibility remains with site owner"
+    },
+    {
+      "file": "assets/old/024_download_3.jpg",
+      "source_url": "https://static.tildacdn.com/tild3337-6637-4731-b337-613361373261/download_3.jpg",
+      "bytes": 43091,
+      "sha256": "6e29cbebfd3e96ab1b23cae93ee0a4363aad96a7ff0c95e1f6ecb93914bf2d72",
+      "content_type": "image/jpeg",
+      "source": "existing Igor Tilda site",
+      "public_use": "reused from previous public site; final rights responsibility remains with site owner"
+    },
+    {
+      "file": "assets/old/025_download_4.jpg",
+      "source_url": "https://static.tildacdn.com/tild3762-6265-4930-b539-343061313637/download_4.jpg",
+      "bytes": 233865,
+      "sha256": "6babb58127b82bb71aed3b8d4e42a136c6c17450683e55a1e52a5b188df47c16",
+      "content_type": "image/jpeg",
+      "source": "existing Igor Tilda site",
+      "public_use": "reused from previous public site; final rights responsibility remains with site owner"
+    },
+    {
+      "file": "assets/old/026_download_5.jpg",
+      "source_url": "https://static.tildacdn.com/tild6232-6534-4063-a634-623937313036/download_5.jpg",
+      "bytes": 1065253,
+      "sha256": "63255372df10981261e6992bbc59ff283fa068cb9ad8ee80eacf7c8a7b6a2438",
+      "content_type": "image/jpeg",
+      "source": "existing Igor Tilda site",
+      "public_use": "reused from previous public site; final rights responsibility remains with site owner"
+    },
+    {
+      "file": "assets/old/027_C65A7C47-88DE-4381-9.jpg",
+      "source_url": "https://static.tildacdn.com/tild3865-3735-4063-b934-383437376530/C65A7C47-88DE-4381-9.jpg",
+      "bytes": 564209,
+      "sha256": "f02544026c2db857a8bd900a765daf6cf403b79658ad0651685aaec743ad59b0",
+      "content_type": "image/jpeg",
+      "source": "existing Igor Tilda site",
+      "public_use": "reused from previous public site; final rights responsibility remains with site owner"
+    },
+    {
+      "file": "assets/old/028_i_1.jpg",
+      "source_url": "https://static.tildacdn.com/tild6438-6339-4063-b835-366439376139/i_1.jpg",
+      "bytes": 254779,
+      "sha256": "7751aeac96f36fc735ef534509b5301a836c63ad716585b383bb13ff1c1d2dfe",
+      "content_type": "image/jpeg",
+      "source": "existing Igor Tilda site",
+      "public_use": "reused from previous public site; final rights responsibility remains with site owner"
+    },
+    {
+      "file": "assets/old/029_i_1.jpg",
+      "source_url": "https://static.tildacdn.com/tild3533-3765-4439-a531-653432653862/i_1.jpg",
+      "bytes": 254779,
+      "sha256": "7751aeac96f36fc735ef534509b5301a836c63ad716585b383bb13ff1c1d2dfe",
+      "content_type": "image/jpeg",
+      "source": "existing Igor Tilda site",
+      "public_use": "reused from previous public site; final rights responsibility remains with site owner"
+    },
+    {
+      "file": "assets/old/030_image.jpg",
+      "source_url": "https://static.tildacdn.com/tild6332-3435-4562-b461-333365656531/image.jpg",
+      "bytes": 845204,
+      "sha256": "4185d98c14429f1eada458d03825581e36db07fb9ffdbfca79b9ee153fd020c8",
+      "content_type": "image/jpeg",
+      "source": "existing Igor Tilda site",
+      "public_use": "reused from previous public site; final rights responsibility remains with site owner"
+    },
+    {
+      "file": "assets/old/031_image-1.jpg",
+      "source_url": "https://static.tildacdn.com/tild6164-6637-4935-b539-346337373637/image-1.jpg",
+      "bytes": 705313,
+      "sha256": "fb61e5f5cd95b1c4e8dc267e45cb620fb7eb66e73490e5f1b0cd383b3d0100ba",
+      "content_type": "image/jpeg",
+      "source": "existing Igor Tilda site",
+      "public_use": "reused from previous public site; final rights responsibility remains with site owner"
+    },
+    {
+      "file": "assets/old/032_image-4.jpg",
+      "source_url": "https://static.tildacdn.com/tild3361-3138-4634-a465-313931633665/image-4.jpg",
+      "bytes": 294859,
+      "sha256": "d76a53b40f8b92a1471dc106948f02236d2bd6c3240144d445267f146b95cd14",
+      "content_type": "image/jpeg",
+      "source": "existing Igor Tilda site",
+      "public_use": "reused from previous public site; final rights responsibility remains with site owner"
+    },
+    {
+      "file": "assets/old/033_0CCC8CDD-818D-475A-A.jpg",
+      "source_url": "https://static.tildacdn.com/tild3439-3865-4665-b433-353433353762/0CCC8CDD-818D-475A-A.jpg",
+      "bytes": 581674,
+      "sha256": "6d2550a66d9dd93a3d005f11df309f0cb287f42b27013e4413744e86bc1dd34d",
+      "content_type": "image/jpeg",
+      "source": "existing Igor Tilda site",
+      "public_use": "reused from previous public site; final rights responsibility remains with site owner"
+    },
+    {
+      "file": "assets/old/034_Frame.svg",
+      "source_url": "https://static.tildacdn.com/tild6638-3762-4964-a136-623338373166/Frame.svg",
+      "bytes": 268,
+      "sha256": "a6bc57e2617ab6249581c3fde59a51748601365ac5c6150eb456a5e3237e93eb",
+      "content_type": "image/svg+xml",
+      "source": "existing Igor Tilda site",
+      "public_use": "reused from previous public site; final rights responsibility remains with site owner"
+    },
+    {
+      "file": "assets/old/035_image-3.jpg",
+      "source_url": "https://static.tildacdn.com/tild3831-6465-4437-a638-623434383466/image-3.jpg",
+      "bytes": 273853,
+      "sha256": "a645167df34e422c455d7e903339837522562c9177ca9be33785e4b992e214eb",
+      "content_type": "image/jpeg",
+      "source": "existing Igor Tilda site",
+      "public_use": "reused from previous public site; final rights responsibility remains with site owner"
+    },
+    {
+      "file": "assets/old/036_image.jpg",
+      "source_url": "https://static.tildacdn.com/tild3463-6531-4166-b635-313236383431/image.jpg",
+      "bytes": 644773,
+      "sha256": "861914b7f087dbcd7d6449827bb93afdccf48cecd2db2c531432fde02f3ac0cb",
+      "content_type": "image/jpeg",
+      "source": "existing Igor Tilda site",
+      "public_use": "reused from previous public site; final rights responsibility remains with site owner"
+    },
+    {
+      "file": "assets/old/037_photo_2024-09-26_11-.jpg",
+      "source_url": "https://static.tildacdn.com/tild6136-6264-4062-a261-343534343234/photo_2024-09-26_11-.jpg",
+      "bytes": 52308,
+      "sha256": "63e8c62abde1a2ea0af0b64aecb6b4c97e7aab79c2f709521b9cb664b6a90faa",
+      "content_type": "image/jpeg",
+      "source": "existing Igor Tilda site",
+      "public_use": "reused from previous public site; final rights responsibility remains with site owner"
+    },
+    {
+      "file": "assets/old/038_photo_2024-09-26_11-.jpg",
+      "source_url": "https://static.tildacdn.com/tild3264-3763-4934-b931-316663633736/photo_2024-09-26_11-.jpg",
+      "bytes": 52308,
+      "sha256": "63e8c62abde1a2ea0af0b64aecb6b4c97e7aab79c2f709521b9cb664b6a90faa",
+      "content_type": "image/jpeg",
+      "source": "existing Igor Tilda site",
+      "public_use": "reused from previous public site; final rights responsibility remains with site owner"
+    }
+  ]
+}
