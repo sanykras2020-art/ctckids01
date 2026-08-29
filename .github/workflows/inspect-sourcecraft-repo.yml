@@ -1,0 +1,40 @@
+name: Inspect SourceCraft repository after 404
+
+on:
+  push:
+    paths:
+      - '.github/workflows/inspect-sourcecraft-repo.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Inspect public SourceCraft repository and URLs
+        shell: bash
+        run: |
+          set -u
+          echo '=== REMOTE HEAD ==='
+          git ls-remote 'https://git.sourcecraft.dev/igor-kompaniets/igor-kompaniets.git' || true
+          rm -rf /tmp/sc
+          git clone --depth=1 'https://git.sourcecraft.dev/igor-kompaniets/igor-kompaniets.git' /tmp/sc || exit 0
+          cd /tmp/sc
+          echo '=== COMMIT ==='
+          git log -1 --oneline || true
+          echo '=== TREE ==='
+          find . -maxdepth 3 -type f | sort | sed -n '1,200p'
+          echo '=== SITES CONFIG ==='
+          if [ -f .sourcecraft/sites.yaml ]; then cat .sourcecraft/sites.yaml; else echo 'MISSING .sourcecraft/sites.yaml'; fi
+          echo '=== INDEX ==='
+          if [ -f index.html ]; then echo "index bytes $(wc -c < index.html)"; head -n 12 index.html; else echo 'MISSING index.html'; fi
+          echo '=== PORTRAIT ==='
+          if [ -f assets/igor.webp ]; then file assets/igor.webp; sha256sum assets/igor.webp; else echo 'MISSING assets/igor.webp'; fi
+          echo '=== HTTP ROOT ==='
+          curl -sS -o /tmp/root -D /tmp/root.h -w 'status=%{http_code}\n' 'https://igor-kompaniets.sourcecraft.site/' || true
+          cat /tmp/root.h || true
+          echo '=== HTTP REPO PATH ==='
+          curl -sS -o /tmp/repo -D /tmp/repo.h -w 'status=%{http_code}\n' 'https://igor-kompaniets.sourcecraft.site/igor-kompaniets/' || true
+          cat /tmp/repo.h || true
