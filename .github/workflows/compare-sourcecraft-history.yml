@@ -1,0 +1,49 @@
+name: Compare SourceCraft history around 404
+
+on:
+  push:
+    paths:
+      - '.github/workflows/compare-sourcecraft-history.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  compare:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Compare SourceCraft commits
+        shell: bash
+        run: |
+          set -u
+          rm -rf /tmp/sc
+          git clone 'https://git.sourcecraft.dev/igor-kompaniets/igor-kompaniets.git' /tmp/sc
+          cd /tmp/sc
+          echo '=== HEAD ==='
+          git rev-parse HEAD
+          git log --oneline -8
+          echo '=== CONFIG HEAD ==='
+          cat .sourcecraft/sites.yaml || true
+          echo '=== CONFIG bb605c2 ==='
+          git show bb605c2:.sourcecraft/sites.yaml || true
+          echo '=== CONFIG 2189039 ==='
+          git show 2189039:.sourcecraft/sites.yaml || true
+          echo '=== CONFIG 996bac5 ==='
+          git show 996bac5:.sourcecraft/sites.yaml || true
+          echo '=== DIFF bb605c2..2189039 CONFIG+INDEX ==='
+          git diff --stat bb605c2..2189039 -- .sourcecraft/sites.yaml index.html assets/igor.webp || true
+          git diff bb605c2..2189039 -- .sourcecraft/sites.yaml || true
+          echo '=== DIFF 2189039..HEAD ==='
+          git diff --stat 2189039..HEAD || true
+          git diff 2189039..HEAD -- .sourcecraft/sites.yaml index.html || true
+          echo '=== FILE LIST HEAD ==='
+          find . -maxdepth 2 -type f | sort
+          echo '=== HTTP ==='
+          for u in \
+            https://igor-kompaniets.sourcecraft.site/ \
+            https://igor-kompaniets.sourcecraft.site/igor-kompaniets/ \
+            https://igor-kompaniets.sourcecraft.site/assets/igor.webp; do
+            echo "$u"
+            curl -sS -I -L "$u" | sed -n '1,12p' || true
+          done
