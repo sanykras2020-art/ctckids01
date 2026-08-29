@@ -1,0 +1,64 @@
+name: Import Igor portrait from Yandex Disk
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/import-igor-photo.yml
+
+permissions:
+  contents: write
+
+jobs:
+  import-photo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Download and normalize portrait
+        env:
+          PUBLIC_KEY: https://disk.yandex.ru/i/RXnRKrevOLllpw
+        run: |
+          python -m pip install --quiet requests pillow
+          python - <<'PY'
+          import io, os, requests
+          from PIL import Image
+          public_key = os.environ['PUBLIC_KEY']
+          api = 'https://cloud-api.yandex.net/v1/disk/public/resources/download'
+          r = requests.get(api, params={'public_key': public_key}, timeout=30)
+          r.raise_for_status()
+          href = r.json()['href']
+          data = requests.get(href, timeout=60).content
+          im = Image.open(io.BytesIO(data)).convert('RGB')
+          side = min(im.size)
+          left = (im.width-side)//2
+          top = (im.height-side)//2
+          im = im.crop((left, top, left+side, top+side)).resize((1024,1024), Image.Resampling.LANCZOS)
+          im.save('/tmp/igor.webp', 'WEBP', quality=90, method=6)
+          print('source:', im.size, 'output bytes:', os.path.getsize('/tmp/igor.webp'))
+          PY
+
+      - name: Update main site asset
+        run: |
+          cp /tmp/igor.webp igor-site-v3/assets/igor.webp
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add igor-site-v3/assets/igor.webp
+          if ! git diff --cached --quiet; then
+            git commit -m 'site: update Igor portrait from Yandex Disk'
+            git push origin main
+          fi
+
+      - name: Update SourceCraft release asset
+        run: |
+          git fetch origin sourcecraft-igor
+          git checkout sourcecraft-igor
+          cp /tmp/igor.webp assets/igor.webp
+          git add assets/igor.webp
+          if ! git diff --cached --quiet; then
+            git commit -m 'site: update Igor portrait from Yandex Disk'
+            git push origin sourcecraft-igor
+          fi
