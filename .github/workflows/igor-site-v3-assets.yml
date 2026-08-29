@@ -24,7 +24,7 @@ jobs:
           from pathlib import Path
           from urllib.request import Request, urlopen
           from urllib.parse import urlparse, unquote
-          import html, json, hashlib, mimetypes, re, shutil, time
+          import html, json, hashlib, mimetypes, re, time
 
           root = Path('igor-site-v3/assets')
           old = root / 'old'
@@ -40,23 +40,22 @@ jobs:
               with urlopen(req, timeout=40) as r:
                   return r.read(MAX+1), r.headers.get('Content-Type','')
 
-          # Current portrait already approved for the working site.
           portrait_url='https://raw.githubusercontent.com/sanykras2020-art/ctckids01/main/igor-site-v2/igor.webp'
-          data, ctype=get(portrait_url)
+          data, _=get(portrait_url)
           if len(data)<=MAX:
               (root/'igor.webp').write_bytes(data)
 
-          # Snapshot existing Igor Tilda site and copy its own visual layer.
           site='https://igorkompaniets.tilda.ws/'
           raw, _=get(site)
           text=raw.decode('utf-8', errors='replace')
           urls=re.findall(r'(?:https?:)?//static\.tildacdn\.com/[^\s\"\'<>]+', text)
-          seen=set(); rows=[]; n=0
+          seen=set(); rows=[]; order=0
           for source in urls:
               source=html.unescape(source).rstrip('),;')
               if source.startswith('//'): source='https:'+source
               if source in seen: continue
               seen.add(source)
+              order += 1
               try:
                   payload, ctype=get(source)
               except Exception:
@@ -68,10 +67,9 @@ jobs:
               if not is_img: continue
               if not ext:
                   ext=mimetypes.guess_extension(ctype.split(';')[0]) or '.bin'
-              n+=1
               base=Path(path).name or f'asset{ext}'
               base=re.sub(r'[^A-Za-z0-9._-]+','_',base)[:100]
-              name=f'{n:03d}_{base}'
+              name=f'{order:03d}_{base}'
               target=old/name
               target.write_bytes(payload)
               rows.append({
