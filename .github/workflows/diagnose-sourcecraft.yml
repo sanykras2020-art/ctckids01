@@ -1,0 +1,93 @@
+name: Diagnose SourceCraft production
+
+on:
+  push:
+    paths:
+      - '.github/workflows/diagnose-sourcecraft.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout GitHub release source
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Inspect expected GitHub release
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch origin sourcecraft-igor
+          echo '=== EXPECTED GITHUB RELEASE ==='
+          echo "branch sha: $(git rev-parse origin/sourcecraft-igor)"
+          git show origin/sourcecraft-igor:index.html > /tmp/expected.html
+          git show origin/sourcecraft-igor:assets/igor.webp > /tmp/expected-igor.webp
+          echo "index sha256: $(sha256sum /tmp/expected.html | awk '{print $1}')"
+          echo "portrait sha256: $(sha256sum /tmp/expected-igor.webp | awk '{print $1}')"
+          echo "archive tile count: $(grep -o 'project-preview' /tmp/expected.html | wc -l || true)"
+          grep -o 'href="#case-[^"]*"' /tmp/expected.html | sort -u || true
+          file /tmp/expected-igor.webp
+
+      - name: Inspect live SourceCraft site
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo '=== LIVE SOURCECRAFT ==='
+          curl -L --fail --silent --show-error --connect-timeout 20 --max-time 60 \
+            -D /tmp/live.headers \
+            -o /tmp/live.html \
+            'https://igor-kompaniets.sourcecraft.site/'
+          echo '-- headers --'
+          cat /tmp/live.headers
+          echo "live html bytes: $(wc -c < /tmp/live.html)"
+          echo "live index sha256: $(sha256sum /tmp/live.html | awk '{print $1}')"
+          echo "project-preview count: $(grep -o 'project-preview' /tmp/live.html | wc -l || true)"
+          echo "legacy archive-card count: $(grep -o 'archive-card' /tmp/live.html | wc -l || true)"
+          echo '-- live project anchors --'
+          grep -o 'href="#case-[^"]*"' /tmp/live.html | sort -u || true
+          echo '-- live portrait src --'
+          grep -oE '<div class="hero-photo"><img[^>]*>' /tmp/live.html || true
+
+      - name: Inspect live SourceCraft portrait asset
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo '=== LIVE PORTRAIT ==='
+          curl -L --fail --silent --show-error --connect-timeout 20 --max-time 60 \
+            -D /tmp/photo.headers \
+            -o /tmp/live-igor \
+            'https://igor-kompaniets.sourcecraft.site/assets/igor.webp'
+          cat /tmp/photo.headers
+          echo "live portrait bytes: $(wc -c < /tmp/live-igor)"
+          echo "live portrait sha256: $(sha256sum /tmp/live-igor | awk '{print $1}')"
+          file /tmp/live-igor
+          echo '-- compare portrait --'
+          if cmp -s /tmp/live-igor /tmp/expected-igor.webp; then echo 'PORTRAIT MATCH'; else echo 'PORTRAIT MISMATCH'; fi
+          echo '-- compare html --'
+          if cmp -s /tmp/live.html /tmp/expected.html; then echo 'HTML MATCH'; else echo 'HTML MISMATCH'; fi
+
+      - name: Inspect public SourceCraft repository
+        shell: bash
+        continue-on-error: true
+        run: |
+          set -x
+          echo '=== SOURCECRAFT GIT REMOTE ==='
+          git ls-remote 'https://git.sourcecraft.dev/igor-kompaniets/igor-kompaniets.git' || true
+          rm -rf /tmp/sourcecraft-repo
+          git clone --depth=1 'https://git.sourcecraft.dev/igor-kompaniets/igor-kompaniets.git' /tmp/sourcecraft-repo || exit 0
+          cd /tmp/sourcecraft-repo
+          git log -1 --oneline
+          echo "sourcecraft repo index sha256: $(sha256sum index.html | awk '{print $1}')"
+          if [ -f assets/igor.webp ]; then
+            echo "sourcecraft repo portrait sha256: $(sha256sum assets/igor.webp | awk '{print $1}')"
+            file assets/igor.webp
+          else
+            echo 'SOURCECRAFT REPO PORTRAIT MISSING'
+          fi
+          echo "project-preview count in repo: $(grep -o 'project-preview' index.html | wc -l || true)"
+          echo "legacy archive-card count in repo: $(grep -o 'archive-card' index.html | wc -l || true)"
