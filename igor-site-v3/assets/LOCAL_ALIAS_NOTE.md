@@ -1,0 +1,1 @@
+Archive images are synchronized from the previous public Tilda site. The final HTML uses stable legacy-style aliases; the same underlying blobs may also exist under sequential sync names. This keeps SourceCraft publication self-contained while preserving source traceability in assets/manifest.json.
