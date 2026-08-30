@@ -47,6 +47,17 @@
     ::selection { color: var(--night); background: var(--turmeric); }
     :focus-visible { outline: 3px solid var(--sky); outline-offset: 4px; }
 
+    .icon-arrow {
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      flex: 0 0 auto;
+      vertical-align: -.12em;
+      background: currentColor;
+      -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M5 3h8v8M13 3 3 13' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/contain no-repeat;
+      mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M5 3h8v8M13 3 3 13' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/contain no-repeat;
+    }
+
     .wrap { width: min(var(--max), 100%); margin: 0 auto; padding-inline: var(--pad); }
     .mono {
       font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
@@ -250,7 +261,14 @@
       border-radius: 999px;
       font-size: 14px;
     }
-    .rhythm span:not(:last-child)::after { content: "→"; color: var(--turmeric); }
+    .rhythm span:not(:last-child)::after {
+      content: "";
+      width: .8em;
+      height: .8em;
+      background: var(--turmeric);
+      -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M2 8h11M9 4l4 4-4 4' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/contain no-repeat;
+      mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M2 8h11M9 4l4 4-4 4' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/contain no-repeat;
+    }
 
     .scene-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
     .scene-card {
@@ -407,7 +425,7 @@
           <h1>Маршрут — только <em>половина</em> истории.</h1>
           <p class="lead">Бангкок, ночной поезд, Чиангмай и&nbsp;горный север — 9–10 дней в&nbsp;маленькой компании с&nbsp;Игорем Компанийцем.</p>
           <div class="hero-actions">
-            <a class="button primary" href="https://t.me/vse_kompaniets" target="_blank" rel="noopener noreferrer">Обсудить пилот <span aria-hidden="true">↗</span></a>
+            <a class="button primary" href="https://t.me/vse_kompaniets" target="_blank" rel="noopener noreferrer">Обсудить пилот <span class="icon-arrow" aria-hidden="true"></span></a>
             <p class="hero-note mono">Сейчас проверяем интерес.<br>Без оплаты и&nbsp;бронирования.</p>
           </div>
         </div>
@@ -590,7 +608,7 @@
         <p class="mono">Первый пилот / Таиланд / 2–3 человека</p>
         <h2>Возможно, нам по&nbsp;пути.</h2>
         <p>Напишите Игорю, что в&nbsp;этом формате вам интересно, а&nbsp;что вызывает сомнения. Это и&nbsp;есть задача первого пилота.</p>
-        <a class="button primary" href="https://t.me/vse_kompaniets" target="_blank" rel="noopener noreferrer">Написать в&nbsp;Telegram <span aria-hidden="true">↗</span></a>
+        <a class="button primary" href="https://t.me/vse_kompaniets" target="_blank" rel="noopener noreferrer">Написать в&nbsp;Telegram <span class="icon-arrow" aria-hidden="true"></span></a>
       </div>
     </section>
   </main>
