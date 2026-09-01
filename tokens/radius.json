@@ -1,0 +1,13 @@
+{
+  "radius": {
+    "none": { "value": "0" },
+    "xs": { "value": "6" },
+    "sm": { "value": "12" },
+    "md": { "value": "18" },
+    "lg": { "value": "24" },
+    "xl": { "value": "32" },
+    "pill": { "value": "999" },
+    "organic-soft": { "value": "36 22 40 18" },
+    "organic-bold": { "value": "44 20 52 16" }
+  }
+}
